@@ -1,0 +1,626 @@
+#xiaolu{
+    width: 100%;
+}
+.flow{
+    width: 30px;
+    height: 120px;
+    background: url(../images/xiaolu/flow.png)no-repeat left;
+    position:fixed;
+    right: 10px;
+    top: 200px;
+}
+.flow1{
+    width: 30px;
+    height: 30px;
+}
+.flow2{
+    width: 30px;
+    height: 30px;
+}
+.flow3{
+    width: 30px;
+    height: 30px;
+}
+.flow4{
+    width: 30px;
+    height: 30px;
+}
+.flow1:hover{
+    /* width: 30px;
+    height: 30px; */
+    background: url(../images/xiaolu/flow.png)no-repeat right top;
+}
+.flow2:hover{
+    /* width: 30px;
+    height: 30px; */
+    background: url(../images/xiaolu/flow.png)no-repeat right -30px;
+}
+.flow3:hover{
+    /* width: 30px;
+    height: 30px; */
+    background: url(../images/xiaolu/flow.png)no-repeat right -60px;
+}
+.erweima{
+    display: none;
+    width: 120px;
+    height: 120px;
+    background: url(../images/xiaolu/emotion-help-qrcode.png)no-repeat center center;
+    background-size: 100%;
+    position:fixed;
+    right: 40px;
+    top: 200px;
+}
+.flow3:hover .erweima{
+    display: block;
+}
+.flow4:hover{
+    /* width: 30px;
+    height: 30px; */
+    background: url(../images/xiaolu/flow.png)no-repeat right -90px;
+}
+.lu0{
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 255, 255);
+}
+.lu1{
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    background: url(../images/xiaolu/logo_1.png)no-repeat 190px center,#fff;
+}
+.lu11{
+    margin-right: 190px;
+}
+.lu11li{
+    display: block;
+    width: 110px;
+    font-size: 14px;
+    line-height: 70px;
+    text-align: center;
+    color: rgb(143, 143, 143);
+}
+.lu11li:hover{
+    color: orange;
+}
+.lus{
+    display: block;
+    color: orange;
+    font-size: 12px;
+    line-height: 70px;
+    margin-left: 280px;
+
+}
+.lu2{
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    background: url(../images/xiaolu/banner.png)no-repeat center center;
+}
+.lu21{
+    width: 170px;
+    height: 100%;
+    margin-left: 190px;
+    background: rgba(124, 124, 124, 0.493);
+}
+.lu21li{
+    width: 100%;
+    height: 70px;
+    background: url(../images/xiaolu/icon-b-1.png)no-repeat 30px center;
+    line-height: 70px;
+    padding-left: 70px;
+    color: rgb(255, 255, 255);
+}
+.erjilu{
+    display: none;
+    position: absolute;
+    left: 360px;
+    top:70px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(124, 124, 124, 0.493);
+}
+.lu22li{
+    width: 100%;
+    height: 70px;
+    background: url(../images/xiaolu/icon-b-1.png)no-repeat 30px center;
+    line-height: 70px;
+    padding-left: 70px;
+    color: rgb(255, 255, 255);
+}
+.erjilu1{
+    display: none;
+    position: absolute;
+    left: 360px;
+    top:70px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(124, 124, 124, 0.493);
+}
+.lu23li{
+    width: 100%;
+    height: 70px;
+    background: url(../images/xiaolu/icon-b-1.png)no-repeat 30px center;
+    line-height: 70px;
+    padding-left: 70px;
+    color: rgb(255, 255, 255);
+}
+.erjilu2{
+    display: none;
+    position: absolute;
+    left: 360px;
+    top:70px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(124, 124, 124, 0.493);
+}
+.lu24li{
+    width: 100%;
+    height: 70px;
+    background: url(../images/xiaolu/icon-b-1.png)no-repeat 30px center;
+    line-height: 70px;
+    padding-left: 70px;
+    color: rgb(255, 255, 255);
+}
+.erjilu3{
+    display: none;
+    position: absolute;
+    left: 360px;
+    top:70px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(124, 124, 124, 0.493);
+}
+.lu25li{
+    width: 100%;
+    height: 70px;
+    background: url(../images/xiaolu/icon-b-1.png)no-repeat 30px center;
+    line-height: 70px;
+    padding-left: 70px;
+    color: rgb(255, 255, 255);
+}
+.erjilu4{
+    display: none;
+    position: absolute;
+    left: 360px;
+    top:70px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(124, 124, 124, 0.493);
+}
+.mmm{
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.li02{
+    float: left;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    border-right: #fff solid 1px;
+    margin-bottom: 20px;
+}
+.lu21li:hover{
+       color:orange;
+}
+.lu21li:hover .erjilu{
+    display: block;
+}
+.lu22li:hover{
+    color: orange;
+}
+.lu22li:hover .erjilu1{
+ display: block;
+}
+.lu23li:hover{
+    color: orange;
+}
+.lu23li:hover .erjilu2{
+ display: block;
+}
+.lu24li:hover{
+    color: orange;
+}
+.lu24li:hover .erjilu3{
+ display: block;
+}
+.lu25li:hover{
+    color: orange;
+}
+.lu25li:hover .erjilu4{
+ display: block;
+}
+.lu3{
+    width:100%;
+    height: 198px;
+    background: url(../images/toulan.jpg)no-repeat center center;
+    background-size: 75%;
+}
+.lu4{
+    width: 100%;
+    height: 410px;
+    background-color: rgb(255, 255, 255);
+}
+.lu41{
+    width: 100%;
+    height: 50px;
+}
+.lu41s1{
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 190px;
+}
+.lu41s2{
+    font-size: 12px;
+    line-height: 50px;
+    margin-left: 5px;
+}
+.lu42{
+    width: 1200px;
+    margin-left: 100px;
+}
+.lu421{
+    position: relative;
+    overflow: hidden;
+    width: 480px;
+    height: 360px;
+    margin-right: 25px;
+}
+.lu4211{
+    width: 480px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.377);
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    line-height: 70px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.685);
+}
+.lu422{
+    overflow: hidden;
+    position: relative;
+    width: 265px;
+    height: 360px;
+
+}
+.lu4221{
+    overflow: hidden;
+    position: relative;
+    width: 265px;
+    height: 175px;
+    margin-bottom: 10px;
+}
+.lu4222{
+    overflow: hidden;
+    position: relative;
+    width: 265px;
+    height: 175px;
+}
+.lu42221{
+    width: 265px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.377);
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.685);
+
+}
+.lu43{
+    width: 378px;
+    height: 360px;
+    margin-left: 25px;
+}
+.lu5{
+    width: 100%;
+    height: 1050px;
+    background-color: rgb(221, 221, 221);
+}
+.lu52{
+    overflow: hidden;
+    width: 1175px;
+    height: 350px;
+    background: url(../images/xiaolu/bg-counsoler.png)no-repeat center center;
+    margin-left: 100px;
+}
+.lu521{
+    width: 370px;
+    height: 290px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: rgba(5, 27, 1, 0.39);
+    color: rgba(255, 255, 255, 0.616);
+}
+.lu521 p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 76px;
+}
+.lu521 span{
+    float: left;
+    text-align: center;
+    display: block;
+    width: 95px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: rgba(19, 19, 19, 0.801);
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.lu53{
+    overflow: hidden;
+    width: 100%;
+    height: 86px;
+    line-height: 86px;
+}
+.lu53 .lu53s1{
+    color: orange;
+    margin-left: 100px;
+    font-size: 14px;
+}
+.lu53 .lu53s2{
+    color: black;
+    font-size: 14px;
+    margin-left: 30px;
+}
+.lu53 .lu53s3{
+    color: black;
+    font-size: 14px;
+    margin-right: 71px;
+}
+.lu54{
+    width: 1175px;
+    height: 275px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.lu541{
+    position: relative;
+    width: 223px;
+    height: 275px;
+    background: pink;
+    color: rgb(93, 12, 80);
+    margin-right: 15px;
+}
+.lu541 p{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(34, 34, 34, 0.644);
+    text-align: center;
+}
+.lu541 .div1{
+    z-index: 1;
+    display: none;
+    width: 223px;
+    height: 235px;
+    background: url(../images/kunkun.gif)no-repeat center center;
+    padding-top: 40px;
+    line-height: 40px;
+}
+.lu541:hover .div1{
+    display: block;
+}
+.lu541:hover p{
+    display: none;
+}
+.lu55{
+    width: 100%;
+    height:180px;
+    background: url(../images/300bg.png)no-repeat 100px center;
+}
+.lu551{
+    width: 460px;
+    height: 180px;
+}
+.lu5511{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-top: 40px;
+    margin-left: 255px;
+}
+.lu5512{
+    font-size: 22px;
+    line-height: 40px;
+    margin-left: 255px;
+}
+.lu552{
+    overflow: hidden;
+}
+.lu5521{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.lu5522{
+    font-size: 14px;
+    line-height: 40px;
+    margin-right: 200px;
+}
+.lu6{
+    width: 100%;;
+    background-color: rgb(218, 218, 218);
+}
+.lu61{
+    width: 100%;
+    height: 60px;
+}
+.lu61s1{
+    float: left;
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 90px;
+}
+.lu61s2{
+    float: right;
+    font-size: 16px;
+    line-height: 60px;
+    margin-right: 100px;
+    color: rgb(85, 83, 83);
+}
+.lu62{
+    width: 1175px;
+    height: 120px;
+    margin-left: 98px;
+}
+.lu621{
+    width: 310px;
+    height:80px;
+    margin-right: 21px;
+    background: url(../images/xiaolu/bg-report-1.png)no-repeat center center;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.dian{
+    color: orange;
+    font-size: 24px;
+    margin-right: 20px;
+}
+.lu63{
+    width: 100%;
+    height: 220px;
+}
+.lu63p{
+    float: left;
+    margin-left: 95px;
+    font-size: 16px;
+    line-height: 60px;
+}
+.lu631{
+    float: left;
+    width: 1175px;
+    height: 150px;
+    margin-left: 97px;
+}
+.lu6311{
+    margin-right: 40px;
+}
+.lu7{
+    width: 100%;
+background-color: rgb(20, 20, 20);
+}
+.lu71{
+    width: 1175px;
+    height: 190px;
+    margin-left: 97px;
+    border-bottom: rgb(138, 137, 137) dashed 1px;
+}
+.lu711{
+    height: 115px;
+}
+.lu7111{
+    position: relative;
+    float: left;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: rgb(66, 66, 66);
+    line-height: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+.lu7112{
+    position: relative;
+    float: left;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: rgb(66, 66, 66);
+    line-height: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+.piao1{
+    display:none;
+    position: absolute;
+    top:70px;
+    width: 1175px;
+}
+.piao2{
+    display:none;
+    position: absolute;
+    top:70px;
+    left:-150px;
+    width: 900px;
+}
+.a11{
+    float: left;
+    width: 100px;
+    height: 40px;
+    color: rgb(247, 242, 242);
+    line-height: 40px;
+    text-align:center;
+
+}
+.a12{
+    float: left;
+    width: 100px;
+    height: 40px;
+    color: rgb(247, 242, 242);
+    line-height: 40px;
+    text-align:center;
+
+}
+.lu7111:hover .piao1{
+    display: block;
+}
+.lu7112:hover .piao2{
+    display: block;
+}
+.li72{
+    overflow: hidden;
+    /* height: 270px; */
+    width: 100%;
+    border-bottom: rgb(138, 137, 137) dashed 1px;
+    background: #000;
+}
+.li72 dt{
+    line-height: 50px;
+    color: #fff;
+}
+.li72 dd{
+    line-height: 30px;
+    color: #fff;
+}
+.li72 dl{
+    margin-left:60px;
+    float: left;
+    padding-bottom: 70px;
+}
+.li722{
+    float: right;
+    height:200px;
+    width: 300px;
+    margin-right: 90px;
+    margin-top: 40px;
+    /* background: #fff; */
+}
+.pq{
+    font-size: 14px;
+    line-height: 40px;
+    color:#fff;
+}
+.pw{
+    font-size: 28px;
+    font-weight: bold;
+    color:#fff;
+}
