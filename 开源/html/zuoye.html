@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #big {
+            width: 100%;
+        }
+
+        #big .ahead {
+            width: 100%;
+            height: 250px;
+        }
+
+        h1 {
+            width: 30%;
+            height: 199px;
+            margin: auto;
+            text-align: center;
+            line-height: 199px;
+        }
+
+        hr {
+            color: #ddd;
+        }
+
+        .mini {
+            list-style: none;
+            width: 60%;
+            /* height: 50px; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mini li {
+            flex: 1;
+            font-size: 14px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .one {
+            width: 100%;
+            /* height: 1350px; */
+            background: rgb(243, 243, 243);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .abody {
+            /* float: left; */
+            height: 1350px;
+            width: 60%;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .abody .ab1 {
+            width: 95%;
+            margin-bottom: 20px;
+            height: 300px;
+            background: #ffffff;
+        }
+
+        .more {
+            /* float: left; */
+            width: 40%;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .more .mo1 {
+            width: 55%;
+            margin-bottom: 20px;
+            height: 200px;
+            background: #ffffff;
+        }
+
+        .choose {
+            width: 140px;
+            height: 30px;
+        }
+
+        .choose span {
+            float: left;
+            width: 100px;
+            height: 100%;
+            text-align: center;
+            line-height: 30px;
+            background: orangered;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .choose input {
+            border: none;
+            float: left;
+            width: 30px;
+            height: 100%;
+            text-align: center;
+            line-height: 30px;
+            background: orangered;
+            color: white;
+        }
+
+        .alist {
+            width: 100%;
+            /* height: 300px; */
+            background: rgb(44, 44, 44);
+            color: rgba(255, 255, 255, 0.719);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .alist .al1 {
+            width: 300px;
+            height: 220px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /* background: #ffffff; */
+        }
+
+        .al1 h2 {
+            width: 100px;
+            height: 31px;
+            margin-top: 10px;
+            text-align: left;
+            font-size: 24px;
+            line-height: 31px;
+            border-bottom: orangered solid 2px;
+
+        }
+
+        .al1 li {
+            list-style: none;
+            float: left;
+            padding-right: 20px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+
+        .li1 {
+            box-sizing: border-box;
+            margin-right: 5px;
+            margin-top: 5px;
+            padding-left: 5px;
+            border: #ffffff solid 1px;
+        }
+
+        .afeet {
+            width: 100%;
+            height: 80px;
+            background: rgb(26, 26, 26);
+        }
+
+        @media all and (min-width:0) and (max-width:800px) {
+            .one {
+                display: block;
+            }
+
+            .alist {
+                display: block;
+            }
+
+            h1 {
+                font-size: 20px;
+                width: 80%;
+            }
+
+            .mini {
+                overflow: auto;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .mini li {
+                height: 50px;
+            }
+
+            .abody {
+                width: 100%;
+            }
+
+            .more {
+                width: 100%;
+            }
+
+            .ab1 {
+                width: 100%
+            }
+
+            .more .mo1 {
+                width: 100%;
+            }
+
+            .al1 {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big">
+        <div class="ahead">
+            <h1>GHOSET&nbsp;开源博客平台</h1>
+            <hr>
+            <ul class="mini">
+                <li>首页</li>
+                <li>论坛</li>
+                <li>快捷手册</li>
+                <li>中文文档</li>
+                <li>关于</li>
+            </ul>
+        </div>
+        <div class="one">
+            <div class="abody">
+                <div class="ab1"></div>
+                <div class="ab1"></div>
+                <div class="ab1"></div>
+                <div class="ab1"></div>
+                <div class="choose">
+                    <span>第1页/共9页</span>
+                    <input type="button" value="&#155;">
+                </div>
+            </div>
+            <div class="more">
+                <div class="mo1"></div>
+                <div class="mo1"></div>
+                <div class="mo1"></div>
+
+            </div>
+        </div>
+        <div class="alist">
+            <div class="al1" style="margin-left: 0;">
+                <h2>友链</h2>
+                <hr>
+                <ul>
+                    <li>SASS中文网</li>
+                    <li>SASS中文网</li>
+                    <li>SASS中文</li>
+                    <li>SASS中文</li>
+                    <li>SASS中文</li>
+                    <li>SASS中文网</li>
+                    <li>SASS中</li>
+                    <li>SASS中文</li>
+                </ul>
+            </div>
+            <div class="al1">
+                <h2>标签云</h2>
+                <hr>
+                <ul>
+                    <li class="li1">新版本</li>
+                    <li class="li1">新版本发布</li>
+                    <li class="li1">新发</li>
+                    <li class="li1">新版本发</li>
+                    <li class="li1">新版本发布</li>
+                    <li class="li1">新版本发布</li>
+                    <li class="li1">新版</li>
+                    <li class="li1">新版本发布</li>
+                    <li class="li1">新发布</li>
+                    <li class="li1">新版布</li>
+                    <li class="li1">新版本发布</li>
+                    <li class="li1">新版本布</li>
+                    <li class="li1">新版发布</li>
+                    <li class="li1">发布</li>
+                    <li class="li1">新版本发布</li>
+                </ul>
+            </div>
+            <div class="al1">
+                <h2>合作伙伴</h2>
+                <hr>
+                <ul>
+                    <li>阿里巴巴</li>
+                    <li>阿里巴巴</li>
+                    <li>阿里巴巴</li>
+                </ul>
+            </div>
+        </div>
+        <div class="afeet"></div>
+    </div>
+</body>
+
+</html>
