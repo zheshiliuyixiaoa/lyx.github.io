@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000;
+        }
+
+        ul {
+            margin: auto;
+            margin-top: 200px;
+            list-style: none;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 0;
+            transform: rotate3d(1,1, 0, 45deg);
+            animation: zhuan 5s infinite linear;
+        }
+
+        li {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            /* animation: shine 0.4s infinite linear; */
+            animation: dong 5s infinite linear;
+        }
+
+        ul li:nth-child(1) {
+            transform: translatex(100px) rotatey(90deg);
+            box-shadow: rgba(255, 0, 0, 0.486) 0 0 15px 15px;
+            color: rgb(255, 0, 0);
+
+        }
+
+        ul li:nth-child(2) {
+            transform: translatex(-100px) rotatey(90deg);
+            box-shadow: rgba(12, 141, 102, 0.486) 0 0 15px 15px;
+            color: rgb(12, 141, 102);
+        }
+
+        ul li:nth-child(3) {
+            transform: translatey(100px) rotatex(90deg);
+            box-shadow: rgba(134, 136, 14, 0.486) 0 0 15px 15px;
+            color: rgb(134, 136, 14);
+        }
+
+        ul li:nth-child(4) {
+            transform: translatey(-100px) rotatex(90deg);
+            box-shadow: rgba(17, 0, 255, 0.486) 0 0 15px 15px;
+            color: rgb(17, 0, 255);
+        }
+
+        ul li:nth-child(5) {
+            transform: translatez(100px);
+            box-shadow: rgba(255, 0, 191, 0.486) 0 0 15px 15px;
+            color: rgb(255, 0, 191);
+        }
+
+        ul li:nth-child(6) {
+            transform: translatez(-100px);
+            box-shadow: rgba(144, 184, 118, 0.486) 0 0 15px 15px;
+            color: rgb(144, 184, 118);
+        }
+
+        @keyframes dong{
+            0%{left: 0px;
+               top: 0px;
+               background: none;
+               }  
+            50%{left: 1200px;
+                top:-300px;
+                background: currentColor;
+                box-shadow:currentColor 0 0 400px 75px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                background: none;
+            }
+        }
+        @keyframes zhuan{
+            0%{transform: rotate3d(1,1, 0, 45deg);}
+            50%{transform: rotate3d(1,0, 0, 180deg);}
+            100%{transform: rotate3d(1,1, 0, 45deg);}
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
