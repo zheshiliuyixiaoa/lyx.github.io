@@ -1,0 +1,122 @@
+#yi {
+    width: 100%;
+
+    .yi1 {
+        width: 100%;
+        height: 80px;
+
+        // background: rebeccapurple;
+        h1 {
+            float: left;
+            width: 300px;
+            height: 80px;
+            text-indent: -9999px;
+            background: url(../images/pc/logo2.png);
+
+        }
+
+        ul {
+            margin-left: 200px;
+            float: left;
+            display: flex;
+            width: 485px;
+            justify-content: space-between;
+            height: 100%;
+
+            li {
+                text-align: center;
+                line-height: 70px;
+                font-size: 20px;
+                color: rgb(49, 49, 49);
+
+                .lid {
+                    width: 0%;
+                    height: 3px;
+                    background: blue;
+                    margin-bottom: 3px;
+                     margin:0 auto;
+                    transition: width 1s;
+                }
+            }
+            li:hover .lid{
+                width: 100%;
+            }
+        }
+
+        .span1 {
+            float: right;
+            width: 100px;
+            height: 60px;
+            margin-top: 9px;
+            margin-left: 10px;
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+            color: rgb(161, 63, 241);
+            border: 1px solid rgb(161, 63, 241);
+        }
+
+        .span2 {
+            float: right;
+            width: 100px;
+            height: 60px;
+            margin-top: 9px;
+            margin-left: 10px;
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+            color: rgb(161, 63, 241);
+            border: 1px solid rgb(161, 63, 241);
+        }
+    }
+
+    .yi2 {
+        width: 100%;
+        height: 570px;
+        background: rgb(94, 92, 92);
+    }
+
+    .yi3 {
+        width: 100%;
+        height: 640px;
+        background: goldenrod;
+    }
+
+    .yi4 {
+        width: 100%;
+        height: 555px;
+        background: green;
+    }
+
+    .yi5 {
+        width: 100%;
+        height: 550px;
+        background: yellow;
+    }
+
+    .yi6 {
+        width: 100%;
+        height: 600px;
+        background: rgb(255, 115, 0);
+    }
+
+    .yi7 {
+        width: 100%;
+        height: 460px;
+        background: rgb(0, 255, 255);
+    }
+
+    .yi8 {
+        width: 100%;
+        height: 445px;
+        background: yellow;
+    }
+
+    .yi9 {
+        width: 100%;
+        height: 110px;
+        background: rgb(0, 255, 42);
+    }
+}

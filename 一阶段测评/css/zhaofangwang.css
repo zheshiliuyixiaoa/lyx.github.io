@@ -1,0 +1,407 @@
+html,
+body {
+  height: 100%;
+}
+
+#zhao {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#zhao header {
+  width: 100%;
+  height: 1.333333rem;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+#zhao header .he1 {
+  width: 1.8rem;
+  height: 100%;
+}
+
+#zhao header .he1 .he011 {
+  float: left;
+  display: block;
+  width: 0.88rem;
+  height: 100%;
+  line-height: 1.333333rem;
+  text-align: center;
+  font-size: .213333rem;
+}
+
+#zhao header .he1 .he012 {
+  float: left;
+  margin-top: .666667rem;
+  margin-left: .32rem;
+  display: block;
+  width: .16rem;
+  height: .16rem;
+  border: transparent solid 0.08rem;
+  border-top-color: black;
+  box-sizing: border-box;
+}
+
+#zhao header .he2 {
+  width: 6.726667rem;
+  height: .8rem;
+  background: #ddd;
+  border-radius: 5%/15%;
+  padding-left: .1rem;
+}
+
+#zhao header .he2 .icon-sousuo {
+  float: left;
+  margin-top: .233333rem;
+  margin-right: .4rem;
+}
+
+#zhao header .he2 input {
+  width: 5.333333rem;
+  font-size: .373333rem;
+  color: #727171;
+  background: #ddd;
+  border-style: none;
+  margin-top: .233333rem;
+}
+
+#zhao main {
+  flex: 1;
+  overflow: auto;
+}
+
+#zhao main .main1 {
+  width: 100%;
+  height: 3.733333rem;
+  background: url(../images/yidong/meiyoutu.jpg);
+  background-size: cover;
+}
+
+#zhao main .main2 {
+  width: 100%;
+  height: 4.4rem;
+  margin-top: .366667rem;
+}
+
+#zhao main .main2 ul {
+  width: 8rem;
+  margin-left: 1rem;
+  height: 100%;
+}
+
+#zhao main .main2 ul li {
+  float: left;
+  width: 1.333333rem;
+  height: 50%;
+  margin-right: .266667rem;
+}
+
+#zhao main .main2 ul li .ma2li2 {
+  display: block;
+  width: 100%;
+  margin-top: .133333rem;
+  text-align: center;
+  color: #858585;
+}
+
+#zhao main .main2 ul li .ma2li11 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li12 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li13 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li14 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li15 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: -1.5rem 0;
+}
+
+#zhao main .main2 ul li .ma2li16 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li17 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li18 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li19 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main2 ul li .ma2li10 {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  background: url(../images/yidong/menu_icon3.png) no-repeat center center;
+  background-position: 0 0;
+}
+
+#zhao main .main3 {
+  width: 100%;
+  height: .533333rem;
+  margin-top: .266667rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: .4rem;
+  box-shadow: #ddd 0 2px 4px 0px;
+}
+
+#zhao main .main3 .iconfont {
+  float: left;
+  display: block;
+  margin-left: .4rem;
+  color: orange;
+  font-size: .426667rem;
+  line-height: .533333rem;
+}
+
+#zhao main .main3 .span2 {
+  float: left;
+  display: block;
+  margin-left: .566667rem;
+  font-size: .373333rem;
+  line-height: .533333rem;
+  color: #2f3130;
+}
+
+#zhao main .main4 {
+  width: 100%;
+  height: 5.333333rem;
+}
+
+#zhao main .main4 h2 {
+  margin-left: 10%;
+  margin-top: .4rem;
+  font-size: .56rem;
+  font-weight: 900;
+}
+
+#zhao main .main4 .banner {
+  width: 8.586667rem;
+  height: 3.2rem;
+  margin-left: 8%;
+  display: flex;
+  overflow: auto;
+  margin-top: .266667rem;
+}
+
+#zhao main .main4 .banner img {
+  width: 8.586667rem;
+  height: 3.2rem;
+  margin-right: .133333rem;
+}
+
+#zhao main .main5 {
+  width: 100%;
+  height: 28rem;
+}
+
+#zhao main .main5 .ma50 {
+  width: 100%;
+  height: 1.5rem;
+}
+
+#zhao main .main5 .ma50 h2 {
+  float: left;
+  margin-left: 10%;
+  margin-top: .4rem;
+  font-size: .56rem;
+  font-weight: 900;
+}
+
+#zhao main .main5 .ma50 .span1 {
+  display: block;
+  margin-top: .6rem;
+  margin-right: .433333rem;
+  float: right;
+  font-size: .426667rem;
+  width: 1.333333rem;
+  height: .666667rem;
+  color: #909090;
+}
+
+#zhao main .main5 .ma50 .span1:hover {
+  color: red;
+}
+
+#zhao main .main5 .ma501 {
+  margin-top: .266667rem;
+  width: 100%;
+  height: 3.366667rem;
+  margin-left: 5%;
+  border-bottom: 1px solid #535353;
+}
+
+#zhao main .main5 .ma501 .ma5011 {
+  margin-top: .4rem;
+  float: left;
+  width: 2.8rem;
+  height: 2.133333rem;
+  background: url(../images/yidong/list1.jpg);
+  background-size: cover;
+}
+
+#zhao main .main5 .ma501 .ma5012 {
+  float: left;
+  margin-left: .266667rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#zhao main .main5 .ma501 .ma5012 h2 {
+  margin-left: -0.066667rem;
+  font-size: .366667rem;
+  font-weight: 900;
+}
+
+#zhao main .main5 .ma501 .ma5012 .p1 {
+  font-size: .32rem;
+  color: #9c9a9a;
+}
+
+#zhao main .main5 .ma501 .ma5012 .p2 span {
+  margin-left: .133333rem;
+}
+
+#zhao main .main5 .ma501 .ma5012 .p2 .p2s1 {
+  color: #ff0062;
+  background: rgba(177, 61, 61, 0.568);
+}
+
+#zhao main .main5 .ma501 .ma5012 .p2 .p2s2 {
+  color: #00b7ff;
+  background: rgba(136, 177, 61, 0.568);
+}
+
+#zhao main .main5 .ma501 .ma5012 .p2 .p2s3 {
+  color: #ea00ff;
+  background: rgba(61, 177, 158, 0.568);
+}
+
+#zhao main .main5 .ma501 .ma5012 .p3 .p3s1 {
+  margin-right: .4rem;
+  font-size: .396667rem;
+  font-weight: 900;
+  color: red;
+}
+
+#zhao main .main5 .ma501 .ma5012 .p3 .p3s2 {
+  font-size: .32rem;
+  color: #a8a8a8;
+}
+
+#zhao footer {
+  width: 100%;
+  height: 2.133333rem;
+  background: #2f3130;
+}
+
+#zhao footer ul {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 1px solid #747474;
+}
+
+#zhao footer ul li {
+  padding-left: .2rem;
+  padding-right: .2rem;
+  color: #747474;
+  border-right: 1px solid #747474;
+}
+
+#zhao footer .fo01 {
+  float: left;
+  display: flex;
+  width: 50%;
+  height: 1.333333rem;
+  margin-left: 5%;
+}
+
+#zhao footer .fo01 .fo011 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+#zhao footer .fo01 .fo011 .iconfont {
+  display: block;
+  font-size: 0.6rem;
+  line-height: 1.333333rem;
+  text-align: center;
+  color: #747474;
+}
+
+#zhao footer .fo01 .fo011 .fo0111 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #747474;
+}
+
+#zhao footer .fo01 .fo011 .span1 {
+  line-height: 0.65rem;
+  color: #747474;
+}
+
+#zhao footer .fo01 .fo011 .span2 {
+  line-height: 0.65rem;
+  color: #747474;
+}
+
+#zhao footer .fo02 {
+  float: left;
+  width: 50%;
+  margin-left: .266667rem;
+  font-size: .16rem;
+  color: #747474;
+}
