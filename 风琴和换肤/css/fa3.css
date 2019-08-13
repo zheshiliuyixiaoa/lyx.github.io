@@ -1,0 +1,201 @@
+html,
+body {
+    height: 100%;
+}
+
+#fa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(../images/b.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 1.866667rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(68, 48, 46, 0.705);
+}
+
+h1 {
+    width: 100%;
+    font-size: .64rem;
+    line-height: 100%;
+    text-align: center;
+    color: rgb(232, 253, 255);
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    padding-top: .5rem;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+#xie {
+    width: 80%;
+    margin-left: 10%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#xiep1 {
+    overflow: hidden;
+    margin-bottom: .133333rem;
+    width: 100%;
+    height: .4rem;
+    color: rgba(58, 165, 184, 0);
+    transition: color 0.5s;
+}
+#xiep0 {
+    overflow: hidden;
+    margin-bottom: .133333rem;
+    width: 100%;
+    height: .4rem;
+    color: rgba(58, 165, 184, 0);
+    transition: color 0.5s;
+}
+#xiep2 {
+    overflow: hidden;
+    margin-bottom: .133333rem;
+    width: 100%;
+    height: .4rem;
+    color: rgba(58, 165, 184, 0);
+    transition: color 0.5s;
+}
+
+#xie input {
+    width: 100%;
+    height: .6rem;
+    color: rgb(148, 148, 148);
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 2%/40%;
+}
+
+#xie input:focus {
+    border-color: rgba(0, 255, 255, 0.534);
+    box-shadow: 0 0 .066667rem .033333rem rgb(0, 204, 255);
+}
+
+.van {
+    margin-top: .733333rem;
+    width: 80%;
+    margin-left: 10%;
+    height: 2rem;
+}
+.van .rui{
+    color: aliceblue;
+    text-shadow: red 0 0 .08rem;
+}
+.choose {
+    width: 80%;
+    margin-left: -0.0001rem;
+    height: 1rem;
+    margin-top: .233333rem;
+    float: left;
+}
+
+.choose label {
+    color: rgb(39, 39, 39);
+    transition: color 1s;
+}
+
+.chuan {
+    float: right;
+    margin-top: -1.8rem;
+    margin-right: .966667rem;
+    width: 2.066667rem;
+    height: 0.933333rem;
+}
+
+.chuan input {
+    width: 100%;
+    height: 0.933333rem;
+    border-radius: 5%/10%;
+    color: rgba(0, 0, 0, 0.719);
+    transition: box-shadow 1s;
+}
+
+table {
+    margin-top: .666667rem;
+    width: 80%;
+    margin-left: 10%;
+    background: rgba(77, 58, 58, 0.822);
+    border: .013333rem solid rgba(46, 73, 82, 0.452);
+}
+#ss{
+    color: aliceblue;
+    text-shadow: red 0 0 .08rem;
+}
+#yy{
+    color: aliceblue;
+    text-shadow: red 0 0 .08rem;
+}
+table caption {
+    padding-bottom: .266667rem;
+    text-align: center;
+}
+caption{
+    color: rgb(220, 221, 221);
+    text-shadow: rgb(153, 0, 0) 0 0 .08rem;
+}
+table tr {
+    border-bottom: .013333rem solid rgba(221, 247, 255, 0.596);
+}
+
+tr td {
+    font-size: .353333rem;
+    color: rgb(230, 230, 230);
+}
+
+footer {
+    width: 100%;
+    height: 1.266667rem;
+    background: rgba(59, 26, 26, 0.555);
+}
+#caidan{
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border: .013333rem solid rgb(85, 43, 43);
+    background: rgb(121, 60, 65);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 1.233333rem;
+    transition: height 1s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#caidan input{
+    width: 1.4rem;
+    height: .6rem;
+    border-style: none;
+    background: rgba(92, 78, 86, 0.808);
+    color: rgb(200, 198, 200);
+    box-shadow: rgb(63, 63, 63) 0 0 .08rem .013333rem;
+}
+footer .liu{
+    overflow: hidden;
+    width: 100%;
+    border-style: none;
+    text-align: center;
+    background: rgba(59, 24, 37, 0.746);
+    color: rgba(255, 255, 255, 0.603);
+}
+
+footer p {
+    width: 100%;
+    height: .8rem;
+    font-size: .433333rem;
+    line-height: .8rem;
+    color: rgb(158, 158, 158);
+    text-align: center;
+}

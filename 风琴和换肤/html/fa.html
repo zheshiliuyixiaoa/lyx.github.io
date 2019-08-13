@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/fa1.css" id="skin">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="fa">
+        <header>
+            <h1>少女前线--练级计算器</h1>
+        </header>
+        <main>
+            <form action="" autocomplete="off">
+                <div id="xie">
+                    <label id="xiep1">当前等级(level now)</label>
+                    <input id="xiexie1" type="search" placeholder="&nbsp;&nbsp;&nbsp;当前等级(level now)：">
+                    <label id="xiep0">已有经验(exp you have now)</label>
+                    <input id="xiexie0" type="search" placeholder="&nbsp;&nbsp;&nbsp;已有经验(exp you have now)：">
+                    <label id="xiep2">目标等级(level wannas be)</label>
+                    <input id="xiexie2" type="search" placeholder="&nbsp;&nbsp;&nbsp;目标等级(level wannas be)：">
+                </div>
+                <div class="van">
+                    <span class="rui">练级地图(map)：</span>
+                    <select name="zhang" id="zhang" autocomplete="off">
+                        <option value="zhang" selected="selected">章节</option>
+                        <option value="zhang">1</option>
+                        <option value="zhang">2</option>
+                        <option value="zhang">3</option>
+                        <option value="zhang">4</option>
+                        <option value="zhang">5</option>
+                        <option value="zhang">6</option>
+                        <option value="zhang">7</option>
+                        <option value="zhang">8</option>
+                        <option value="zhang">9</option>
+                        <option value="zhang">10</option>
+                        <option value="zhang">11</option>
+                    </select>
+                    <span>-</span>
+                    <select name="jie" id="jie" autocomplete="off">
+                        <option value="jie" selected="selected">关卡</option>
+                        <option value="jie">1</option>
+                        <option value="jie">2</option>
+                        <option value="jie">3</option>
+                        <option value="jie">4</option>
+                        <option value="jie">5</option>
+                        <option value="jie">6</option>
+                        <option value="jie">1e</option>
+                        <option value="jie">2e</option>
+                        <option value="jie">3e</option>
+                        <option value="jie">4e</option>
+                        <option value="jie">1n</option>
+                        <option value="jie">2n</option>
+                        <option value="jie">3n</option>
+                        <option value="jie">4n</option>
+                    </select>
+                    <div class="choose">
+                        <label for="s" id="ss">圣肝日（exp up）</label>
+                        <input type="radio" name="di" id="s" placeholder="圣肝日（exp up）">
+                        <label for="y" id="yy">誓约（oath）</label>
+                        <input type="radio" name="di" id="y" placeholder="誓约（oath）">
+                    </div>
+                </div>
+                <div class="chuan">
+                    <input type="button" value="上传计算" id="jisuan">
+                </div>
+            </form>
+            <table>
+                <caption>练级常用地图，新地图等级衰减未知</caption>
+                <tr>
+                    <td>等级（level）</td>
+                    <td>萌新（young）</td>
+                    <td>养老（dalao）</td>
+                </tr>
+                <tr>
+                    <td>1-20</td>
+                    <td>推图就行/13e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>1-30</td>
+                    <td>21e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>40-50</td>
+                    <td>33e</td>
+                    <td>高级模拟</td>
+                </tr>
+                <tr>
+                    <td>1-20</td>
+                    <td>推图就行/13e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>1-30</td>
+                    <td>21e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>40-50</td>
+                    <td>33e</td>
+                    <td>高级模拟</td>
+                </tr>
+                <tr>
+                    <td>1-20</td>
+                    <td>推图就行/13e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>1-30</td>
+                    <td>21e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>40-50</td>
+                    <td>33e</td>
+                    <td>高级模拟</td>
+                </tr>
+                <tr>
+                    <td>1-20</td>
+                    <td>推图就行/13e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>1-30</td>
+                    <td>21e</td>
+                    <td>高级模/自律12</td>
+                </tr>
+                <tr>
+                    <td>40-50</td>
+                    <td>33e</td>
+                    <td>高级模拟</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <div id="caidan">
+                <input type="button" id="pifu1" value="默认">
+                <input type="button" id="pifu2" value="汤姆逊">
+                <input type="button" id="pifu3" value="ump9">
+                <input type="button" id="pifu4" value="汉阳88">
+            </div>
+            <input type="button" id="anniu" value="一键换肤" class="liu">
+            <p>@fa仔制作，侵权必究</p>
+        </footer>
+    </div>
+</body>
+<script>
+    var xiexie = document.getElementById('xiexie0');
+    var xiep = document.getElementById('xiep0');
+    xiexie0.onclick = function () {
+        xiep0.style.color = 'blue';
+        xiep1.style.color = 'rgba(240, 248, 255, 0)'
+        xiep2.style.color = 'rgba(240, 248, 255, 0)'
+    }
+    var xiexie1 = document.getElementById('xiexie2');
+    var xiep1 = document.getElementById('xiep2');
+    xiexie2.onclick = function () {
+        xiep2.style.color = 'blue';
+        xiep1.style.color = 'rgba(240, 248, 255, 0)'
+        xiep0.style.color = 'rgba(240, 248, 255, 0)'
+    }
+    var xiexie1 = document.getElementById('xiexie1');
+    var xiep1 = document.getElementById('xiep1');
+    xiexie1.onclick = function () {
+        xiep1.style.color = 'blue';
+        xiep0.style.color = 'rgba(240, 248, 255, 0)'
+        xiep2.style.color = 'rgba(240, 248, 255, 0)'
+    }
+    var jisuan = document.getElementById('jisuan');
+    jisuan.onclick = function () {
+        jisuan.style = ' color:rgba(23, 31, 56, 0.671);background:rgba(0, 225, 255, 0.274);border:1px solid rgba(0, 68, 255, 0.431);box-shadow:rgb(91, 91, 197) 0 0 .093333rem .016667rem';
+    }
+    var s = document.getElementById('s');
+    var ss = document.getElementById('ss');
+    s.onclick = function () {
+        ss.style.color = 'rgb(33, 67, 218)';
+        yy.style.color = 'rgb(39, 39, 39)';
+    }
+    var y = document.getElementById('y');
+    var yy = document.getElementById('yy');
+    y.onclick = function () {
+        yy.style.color = 'rgb(33, 67, 218)';
+        ss.style.color = 'rgb(39, 39, 39)';
+    }
+    var caidan = document.getElementById('caidan');
+    var anniu = document.getElementById('anniu');
+    anniu.onclick = function () {
+        if (istrue) {
+            caidan.style.height = '1.333333rem';
+        } else {
+            caidan.style.height = '0';
+        }
+        istrue = !istrue;
+    }
+    var istrue = true;
+    var pifu1 = document.getElementById('pifu1');
+    var pifu2 = document.getElementById('pifu2');
+    var pifu3 = document.getElementById('pifu3');
+    var pifu4 = document.getElementById('pifu4');
+    var skin = document.getElementById('skin');
+    var oldskin = skin.href;
+    pifu1.onclick = function () {
+        skin.href = '../css/fa1.css';
+    }
+    pifu2.onclick = function () {
+        skin.href = '../css/fa2.css';
+    }
+    pifu3.onclick = function () {
+        skin.href = '../css/fa3.css';
+    }
+    pifu4.onclick = function () {
+        skin.href = '../css/fa4.css';
+    }
+</script>
+
+</html>

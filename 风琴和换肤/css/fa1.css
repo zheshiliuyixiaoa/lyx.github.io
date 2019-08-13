@@ -1,0 +1,187 @@
+html,
+body {
+    height: 100%;
+}
+
+#fa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(../images/timg.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 1.866667rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(131, 224, 224);
+}
+
+h1 {
+    width: 100%;
+    font-size: .64rem;
+    line-height: 100%;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    padding-top: .5rem;
+    background: rgba(255, 255, 255, 0.602);
+}
+
+#xie {
+    width: 80%;
+    margin-left: 10%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#xiep1 {
+    overflow: hidden;
+    margin-bottom: .133333rem;
+    width: 100%;
+    height: .4rem;
+    color: rgba(58, 165, 184, 0);
+    transition: color 0.5s;
+}
+#xiep0 {
+    overflow: hidden;
+    margin-bottom: .133333rem;
+    width: 100%;
+    height: .4rem;
+    color: rgba(58, 165, 184, 0);
+    transition: color 0.5s;
+}
+#xiep2 {
+    overflow: hidden;
+    margin-bottom: .133333rem;
+    width: 100%;
+    height: .4rem;
+    color: rgba(58, 165, 184, 0);
+    transition: color 0.5s;
+}
+
+#xie input {
+    width: 100%;
+    height: .6rem;
+    color: rgb(148, 148, 148);
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 2%/40%;
+}
+
+#xie input:focus {
+    border-color: rgba(0, 255, 255, 0.534);
+    box-shadow: 0 0 .066667rem .033333rem rgb(0, 204, 255);
+}
+
+.van {
+    margin-top: .733333rem;
+    width: 80%;
+    margin-left: 10%;
+    height: 2rem;
+}
+
+.choose {
+    width: 80%;
+    margin-left: -0.0001rem;
+    height: 1rem;
+    margin-top: .233333rem;
+    float: left;
+}
+
+.choose label {
+    color: rgb(39, 39, 39);
+    transition: color 1s;
+}
+
+.chuan {
+    float: right;
+    margin-top: -1.8rem;
+    margin-right: .966667rem;
+    width: 2.066667rem;
+    height: 0.933333rem;
+}
+
+.chuan input {
+    width: 100%;
+    height: 0.933333rem;
+    border-radius: 5%/10%;
+    color: rgba(0, 0, 0, 0.719);
+    transition: box-shadow 1s;
+}
+
+table {
+    margin-top: .666667rem;
+    width: 80%;
+    margin-left: 10%;
+    background: rgb(157, 212, 203);
+    border: .013333rem solid rgba(70, 114, 128, 0.452);
+}
+
+table caption {
+    padding-bottom: .266667rem;
+    text-align: center;
+}
+
+table tr {
+    border-bottom: .013333rem solid rgba(70, 114, 128, 0.452);
+}
+
+tr td {
+    font-size: .353333rem;
+    color: rgb(6, 7, 77);
+}
+
+footer {
+    width: 100%;
+    height: 1.266667rem;
+    background: rgb(101, 180, 233);
+}
+#caidan{
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border: .013333rem solid rgb(110, 110, 209);
+    background: rgb(153, 153, 211);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 1.233333rem;
+    transition: height 1s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#caidan input{
+    width: 1.4rem;
+    height: .6rem;
+    border-style: none;
+    background: rgb(171, 207, 228);
+    color: rgb(115, 54, 121);
+    box-shadow: white 0 0 .08rem .013333rem;
+}
+footer .liu{
+    overflow: hidden;
+    width: 100%;
+    border-style: none;
+    text-align: center;
+    background: rgb(71, 154, 209);
+    color: rgba(255, 255, 255, 0.603);
+}
+
+footer p {
+    width: 100%;
+    height: .8rem;
+    font-size: .433333rem;
+    line-height: .8rem;
+    color: rgb(45, 58, 73);
+    text-align: center;
+}
