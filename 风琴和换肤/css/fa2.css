@@ -8,7 +8,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: url(../images/dong.gif)-2rem;
+    background: url(../images/dong.gif)-2rem no-repeat;
     background-size: cover;
 }
 
