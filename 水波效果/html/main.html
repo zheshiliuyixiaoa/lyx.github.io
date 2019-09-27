@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #one {
+            width: 100%;
+            height: 100%;
+            background: url(../images/sucai.jpg)no-repeat, no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            z-index: 0;
+            /* overflow: hidden; */
+        }
+
+        .one01 {
+            width: 4px;
+            height: 4px;
+            position: absolute;
+            /* 
+            这类数据将根据点击事件生成
+            left: calc((100% - 30px)/2);
+            top: calc((100% - 30px)/2);
+             */
+            border-radius: 50%;
+            background: url(../images/sucai.jpg)no-repeat no-repeat;
+            background-attachment: fixed;
+            /* background-attachment: fixed;规定背景图像是否固定或者随着页面的其余部分滚动。 */
+            background-position: center center;
+            background-clip: content-box;
+            /* background-clip: content-box;规定图片的显示区域；不加这句话的话，在点击距离上边框小于300px的范围时，图片会出现拉伸情况 */
+        }
+
+        .two {
+            z-index: 2;
+            background-size: 106%;
+        }
+
+        .three {
+            z-index: 3;
+            background-size: 102%;
+        }
+
+        .four {
+            z-index: 4;
+            background-size: 104%;
+        }
+
+        .five {
+            z-index: 5;
+            background-size: 101%;
+        }
+
+        .six {
+            z-index: 6;
+            background-size: 102%;
+        }
+
+        .seven {
+            z-index: 7;
+            background-size: 100%;
+        }
+    </style>
+    <title>最终效果</title>
+</head>
+<!-- <div class="one01 two"></div>
+        <div class="one01 three"></div>
+        <div class="one01 four"></div>
+        <div class="one01 five"></div>
+        <div class="one01 six"></div>
+        <div class="one01 seven"></div> -->
+
+<body>
+    <div id="one">
+
+    </div>
+</body>
+<script src="../js/common.js"></script>
+<!-- 问题：点击事件时，如果点击到生成的子元素上时，offset会出现错乱。 -->
+<script>
+    var one = document.getElementById('one');
+    var isture = true;
+    one.onmousedown = function (ev) {
+        if (isture) {
+            isture = false;
+            var leX = one.getBoundingClientRect().left;//获取元素one距离左可视区边框的距离
+            var leY = one.getBoundingClientRect().top;
+            if (ev.target.id == 'one') {
+                var disX = ev.offsetX;//获取光标到该元素左侧的距离
+                var disY = ev.offsetY;
+            }
+            else {
+                var disX = ev.pageX - leX;
+                var disY = ev.pageY - leY;
+            }
+            // console.log(disX);
+            // console.log(disY);
+            var htm = `<div class="one01 two"></div>
+                  <div class="one01 three"></div>
+                  <div class="one01 four"></div>
+                  <div class="one01 five"></div>
+                  <div class="one01 six"></div>
+                  <div class="one01 seven"></div>`;
+            one.innerHTML = htm;
+            var one01 = document.getElementsByClassName('one01');
+
+            for (var i = 0; i < one01.length; i++) {
+                one01[i].style.left = (disX - 2) + 'px';//渲染one01，并让他的中心点定位在光标处
+                one01[i].style.top = (disY - 2) + 'px';
+            }
+            var speed = 25;
+            var timer = null;
+            var iwid = 0;
+            var ihei = 0;
+            timer = setInterval(function () {
+                speed -= speed / 30;
+                if (iwid >= 300) {
+                    iwid = 300;
+                    ihei = 300;
+                    clearInterval(timer);
+                }
+                else {
+                    iwid = one01[0].offsetWidth + speed;
+                    one01[0].style.width = iwid + 'px';
+                    one01[0].style.left = disX - iwid / 2 + 'px';
+                    ihei = one01[0].offsetHeight + speed;
+                    one01[0].style.height = ihei + 'px';
+                    one01[0].style.top = disY - ihei / 2 + 'px';
+                }
+            }, 30);
+            setTimeout(function change01() {
+                var speed1 = 25;
+                var timer1 = null;
+                var iwid1 = 0;
+                var ihei1 = 0;
+                timer1 = setInterval(function () {
+                    speed1 -= speed1 / 30;
+                    if (iwid1 >= 300) {
+                        iwid1 = 300;
+                        ihei1 = 300;
+                        clearInterval(timer1);
+                    }
+                    else {
+                        iwid1 = one01[1].offsetWidth + speed1;
+                        one01[1].style.width = iwid1 + 'px';
+                        one01[1].style.left = disX - iwid1 / 2 + 'px';
+                        ihei1 = one01[1].offsetHeight + speed1;
+                        one01[1].style.height = ihei1 + 'px';
+                        one01[1].style.top = disY - ihei1 / 2 + 'px';
+                    }
+                }, 30);
+            }, 80);
+            setTimeout(function change02() {
+                var speed2 = 25;
+                var timer2 = null;
+                var iwid2 = 0;
+                var ihei2 = 0;
+                timer2 = setInterval(function () {
+                    speed2 -= speed2 / 30;
+                    if (iwid2 >= 300) {
+                        iwid2 = 300;
+                        ihei2 = 300;
+                        clearInterval(timer2);
+                    }
+                    else {
+                        iwid2 = one01[2].offsetWidth + speed2;
+                        one01[2].style.width = iwid2 + 'px';
+                        one01[2].style.left = disX - iwid2 / 2 + 'px';
+                        ihei2 = one01[2].offsetHeight + speed2;
+                        one01[2].style.height = ihei2 + 'px';
+                        one01[2].style.top = disY - ihei2 / 2 + 'px';
+                    }
+                }, 30);
+            }, 160);
+            setTimeout(function change03() {
+                var speed3 = 25;
+                var timer3 = null;
+                var iwid3 = 0;
+                var ihei3 = 0;
+                timer3 = setInterval(function () {
+                    speed3 -= speed3 / 30;
+                    if (iwid3 >= 300) {
+                        iwid3 = 300;
+                        ihei3 = 300;
+                        clearInterval(timer3);
+                    }
+                    else {
+                        iwid3 = one01[3].offsetWidth + speed3;
+                        one01[3].style.width = iwid3 + 'px';
+                        one01[3].style.left = disX - iwid3 / 2 + 'px';
+                        ihei3 = one01[3].offsetHeight + speed3;
+                        one01[3].style.height = ihei3 + 'px';
+                        one01[3].style.top = disY - ihei3 / 2 + 'px';
+                    }
+                }, 30);
+            }, 260);
+            setTimeout(function change04() {
+                var speed4 = 25;
+                var timer4 = null;
+                var iwid4 = 0;
+                var ihei4 = 0;
+                timer4 = setInterval(function () {
+                    speed4 -= speed4 / 30;
+                    if (iwid4 >= 300) {
+                        iwid4 = 300;
+                        ihei4 = 300;
+                        clearInterval(timer4);
+                    }
+                    else {
+                        iwid4 = one01[4].offsetWidth + speed4;
+                        one01[4].style.width = iwid4 + 'px';
+                        one01[4].style.left = disX - iwid4 / 2 + 'px';
+                        ihei4 = one01[4].offsetHeight + speed4;
+                        one01[4].style.height = ihei4 + 'px';
+                        one01[4].style.top = disY - ihei4 / 2 + 'px';
+                    }
+                }, 30);
+            }, 340);
+            setTimeout(function change05() {
+                var speed5 = 25;
+                var timer5 = null;
+                var iwid5 = 0;
+                var ihei5 = 0;
+                timer5 = setInterval(function () {
+                    speed5 -= speed5 / 30;
+                    if (iwid5 >= 300) {
+                        iwid5 = 300;
+                        ihei5 = 300;
+                        clearInterval(timer5);
+                    }
+                    else {
+                        iwid5 = one01[5].offsetWidth + speed5;
+                        one01[5].style.width = iwid5 + 'px';
+                        one01[5].style.left = disX - iwid5 / 2 + 'px';
+                        ihei5 = one01[5].offsetHeight + speed5;
+                        one01[5].style.height = ihei5 + 'px';
+                        one01[5].style.top = disY - ihei5 / 2 + 'px';
+                    }
+                }, 30);
+            }, 450);
+            setTimeout(function dele() {
+                one.innerHTML = '';
+                isture = true;
+            }, 950)
+        }
+    }
+</script>
+
+</html>
